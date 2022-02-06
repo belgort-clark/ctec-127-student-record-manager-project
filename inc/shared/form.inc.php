@@ -25,16 +25,16 @@ if (basename($_SERVER['PHP_SELF']) == 'create-record.php') {
     <label class="col-form-label" for="last">Last Name</label>
     <input class="form-control" type="text" id="last" name="last" value="<?= isset($last) ? $last : null ?>">
     <br>
-    <label class=" col-form-label" for="id">Student ID </label>
+    <label class="col-form-label" for="id">Student ID </label>
     <input class="form-control" type="number" id="id" name="student_id" value="<?= isset($student_id) ? $student_id : null ?>">
     <br>
-    <label class=" col-form-label" for="email">Email</label>
+    <label class="col-form-label" for="email">Email</label>
     <input class="form-control" type="text" id="email" name="email" value="<?= isset($email) ? $email : null ?>">
     <br>
-    <label class=" col-form-label" for="phone">Phone</label>
+    <label class="col-form-label" for="phone">Phone</label>
     <input class="form-control" type="text" id="phone" name="phone" value="<?= isset($phone) ? $phone : null ?>">
     <br>
     <br>
-    <a href=" display-records.php">Cancel</a>&nbsp;&nbsp;
+    <a href="display-records.php">Cancel</a>&nbsp;&nbsp;
     <button class="btn btn-primary" type="submit"><?= $button_label ?></button>
 </form>
