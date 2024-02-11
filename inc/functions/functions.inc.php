@@ -19,11 +19,11 @@ function display_letter_filters($filter)
         if ($filter == $letters[$i]) {
             $class = 'class="d-inline-block text-light font-weight-bold p-2 mr-3 bg-dark"';
         } else {
-            $class = 'class="d-inline-block text-secondary p-2 mr-5 bg-light border rounded"';
+            $class = 'class="d-inline-block text-dark p-2 mr-5 bg-light border rounded"';
         }
-        echo "<u><a $class href='?filter=$letters[$i]' title='$letters[$i]'>$letters[$i]</a></u>";
+        echo "<a $class href='?filter=$letters[$i]' title='Letter $letters[$i]'>$letters[$i]</a>";
     }
-    echo '<a class="text-secondary p-2 mx-2 bg-primary text-light border rounded" href="?clearfilter" title="Reset Filter">Reset</a>&nbsp;&nbsp;';
+    echo '<a class="text-decoration-none bg-dark text-secondary p-2 mx-2 bg-primary text-light border rounded" href="?clearfilter" title="Reset Filter">Reset</a>&nbsp;&nbsp;';
 }
 
 function display_record_table($records)
@@ -35,7 +35,7 @@ function display_record_table($records)
     foreach ($records as $row) {
         # display rows and columns of data
         echo '<tr>';
-        echo "<td><a href=\"update-record.php?id={$row->id}\">Update</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=\"delete-record.php?id={$row->id}\" onclick=\"return confirm('Are you sure?');\">Delete</a></td>";
+        echo "<td><a class='text-decoration-none' href=\"update-record.php?id={$row->id}\">Update</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class='text-decoration-none' href=\"delete-record.php?id={$row->id}\" onclick=\"return confirm('Are you sure?');\">Delete</a></td>";
         echo "<td>{$row->student_id}</td>";
         echo "<td><strong>{$row->first_name}</strong></td>";
         echo "<td><strong>{$row->last_name}</strong></td>";

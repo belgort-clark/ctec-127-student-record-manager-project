@@ -1,4 +1,4 @@
-# CTEC 127 - Project No. 2
+# CTEC 127 - Project No. 2 (2024)
 
 ## Project Overview
 
@@ -46,6 +46,8 @@ Let's first explore the file and folder structure of the application. The instru
 - search-records.php
 - update-record.php
 - advanced-search.php
+- .gitignore
+- .htaccess
 
 ## Application Overview
 
@@ -100,17 +102,17 @@ The database table contains new columns:
 
 1) Modify the **create_record.php** and any other associated files to include form fields for:
 
-- The **gpa** field (A number)
-- The **financial_aid** field (A radio button that has the labels Yes and No and the values of 1 and 0 respectively)
-- The **degree_program** fields should be a select tag with at least 5 options
+   - The **gpa** field (A number)
+   - The **financial_aid** field (A radio button that has the labels Yes and No and the values of 1 and 0 respectively)
+   - The **degree_program** fields should be a select tag with at least 5 options
 
 2) Modify the **display_records.php** and any other associated files to show the **gpa**, **financial_aid** and **degree_program** data. I will let you decided where best to display them. You should also include all of the ones that are currently being displayed.
 
-3. **Comment all of the PHP code**. You don't have to comment evey line. Provide comments that help show me that you understand what the code is doing.
+3) **Comment all of the PHP code**. You don't have to comment every line. Provide comments that help show me that you understand what the code is doing.
 
-4. Test your code extensively.
+4) Review your code, ensure it's commented and test your code extensively
 
-## Submission
+## Submission in Canvas
 
-- In Canvas, submit the words "READY TO GRADE".
 - You will need to push your code to **GitHub** for me to review, test and grade.
+- In Canvas, submit the words "READY TO GRADE".

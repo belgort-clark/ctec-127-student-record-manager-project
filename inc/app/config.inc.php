@@ -1,9 +1,11 @@
 <?php // Filename: config.inc.php
 // copyright
-$app_copyright = '&copy; 2019 - 2022 by YOUR NAME GOES HERE';
+$app_copyright = '&copy; 2019 - 2024 by YOUR NAME GOES HERE';
 // version
-$app_version = 0.1;
+$app_version = 0.5;
 // app name
-$app_name = "Record Manager";
+$app_name = "CTEC 127 Record Manager";
 // database table name
 $db_table = "student_v2";
+// app status (dev and prod)
+$app_status = "dev";

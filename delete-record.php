@@ -15,8 +15,9 @@ if (isset($_GET["id"])) {
     $result = $stmt->rowCount();
     if ($result) {
         // if successfully, redirect the user to the display-records.php page with a parameter
-        header('location: display-records.php?message=I%20 successfully%20deleted%20that%20record%20for%20you.');
+        header('location: display-records.php?message=I%20successfully%20deleted%20that%20record%20for%20you.');
     } else {
-        echo '<h1 class="display-5">Please do not play with our site. GO AWAY!</h1>';
+        echo '<h1 class="display-5">Please do not play with our site.</h1>';
+        echo '<img class="mx-auto d-block mt-4" src="img/frown.png" alt="A sad face">';
     }
 }

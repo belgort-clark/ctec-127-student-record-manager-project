@@ -35,6 +35,6 @@ if (basename($_SERVER['PHP_SELF']) == 'create-record.php') {
     <input class="form-control" type="text" id="phone" name="phone" value="<?= isset($phone) ? $phone : null ?>">
     <br>
     <br>
-    <a href="display-records.php">Cancel</a>&nbsp;&nbsp;
-    <button class="btn btn-primary" type="submit"><?= $button_label ?></button>
+    <a class="text-decoration-none text-dark" href="display-records.php">Cancel</a>&nbsp;&nbsp;
+    <button class="btn btn-dark shadow" type="submit"><?= $button_label ?></button>
 </form>

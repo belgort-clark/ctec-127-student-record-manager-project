@@ -10,7 +10,8 @@
     <title><?= $pageTitle ?></title>
 </head>
 
-<body>
+<body data-bs-theme="light">
+    <h1 class="d-none"><?= $pageTitle ?></h1>
     <?php
     require_once 'inc/app/config.inc.php';
     require_once __DIR__ . "/../functions/functions.inc.php";

@@ -34,7 +34,7 @@ if (isset($_GET["filter"])) {
         $sql = "SELECT * FROM $db_table ORDER BY email ASC";
     }
     $stmt = $db->prepare($sql);
-    $stmt->execute(["orderby" => $orderby]);
+    $stmt->execute();
 } else {
     $sql = "SELECT * FROM $db_table";
     $stmt = $db->prepare($sql);
@@ -44,14 +44,15 @@ if (isset($_GET["filter"])) {
 $records = $stmt->fetchAll();
 
 if ($stmt->rowCount() == 0 && $filter != '') {
-    echo "<h2 class=\"mt-4 alert alert-warning\">No Records for <strong>last names</strong> starting with <strong>$filter</strong></h2>";
+    echo "<h2 class=\"mt-4 shadow alert alert-warning\">No Records for <strong>last names</strong> starting with <strong>$filter
+    </strong></h2>";
 } else {
     if (empty($filter)) {
         $text = '';
     } else {
-        $text = " - last names starting with $filter";
+        $text = " - last names starting with <span class='fw-bold'>'$filter'</span>";
     }
-    echo "<h2 class=\"mt-4 alert alert-info\">" . $stmt->rowCount() . " Student Records" . $text . '</h2>';
+    echo "<h2 class=\"mt-4 shadow alert alert-info\"><span class='fw-bold'>" . $stmt->rowCount() . " Records</span>" . $text . '</h2>';
 }
 
 // display alphabet filters
