@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Be sure to clone this repository to your computer before reading any future. Place it in your **htdocs** folder.
+Be sure to clone this repository to your computer before reading any further. Place it in your **htdocs** folder.
 
 This project will have you modify the **Student Record Management** application that I have provided to include new functionality.
 
